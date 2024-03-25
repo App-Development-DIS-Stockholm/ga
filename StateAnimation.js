@@ -3,7 +3,7 @@ import { Pressable, StyleSheet, View } from "react-native";
 export default function StateAnimation() {
   return (
     <View style={styles.container}>
-      <Pressable style={[styles.square, { transform: [] }]} />
+      <Pressable style={[styles.square, { transform: undefined }]} />
     </View>
   );
 }
