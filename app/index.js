@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import StateAnimation from "../StateAnimation";
+import ReanimatedAnimation from "../ReanimatedAnimation";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <StateAnimation />
+      <ReanimatedAnimation />
     </View>
   );
 }
