@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import ReanimatedAnimation from "../ReanimatedAnimation";
+import GestureHandling from "../GestureHandling";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <ReanimatedAnimation />
+      <GestureHandling />
     </View>
   );
 }
