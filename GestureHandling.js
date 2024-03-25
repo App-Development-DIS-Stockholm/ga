@@ -12,16 +12,16 @@ import Animated, {
 export default function GestureHandling() {
   const offset = useSharedValue({ x: 0, y: 0 });
 
-  const animatedStyles = useAnimatedStyle(() => ({
-    transform: [{ translateX: offset.value.x }, { translateY: offset.value.y }],
-  }));
-
   const panGesture = Gesture.Pan().onUpdate((e) => {
     offset.value = {
       x: e.translationX,
       y: e.translationY,
     };
   });
+
+  const animatedStyles = useAnimatedStyle(() => ({
+    transform: [{ translateX: offset.value.x }, { translateY: offset.value.y }],
+  }));
 
   return (
     <GestureHandlerRootView style={styles.gestureContainer}>
