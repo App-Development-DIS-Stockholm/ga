@@ -16,7 +16,7 @@ export default function ReanimatedAnimation() {
     easing: Easing.linear,
   });
 
-  const animations = () => {
+  const constantAnimations = () => {
     degrees.value = withRepeat(rotate, -1);
   };
 
@@ -24,7 +24,7 @@ export default function ReanimatedAnimation() {
     transform: [{ rotate: `${degrees.value}deg` }],
   }));
 
-  useEffect(animations);
+  useEffect(constantAnimations);
 
   return (
     <View style={styles.container}>
