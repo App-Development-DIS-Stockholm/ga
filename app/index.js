@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import TransformExample from "../TransformExample";
+import StateAnimation from "../StateAnimation";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <TransformExample />
+      <StateAnimation />
     </View>
   );
 }
