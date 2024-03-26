@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
-import GestureHandling from "../GestureHandling";
+import TransformExample from "../components/TransformExample";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <GestureHandling />
+      <TransformExample />
     </View>
   );
 }
